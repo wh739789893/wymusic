@@ -6,10 +6,13 @@ import playlist from './components/playlist.vue'
 import mvs from './components/mvs.vue'
 import songs from './components/songs.vue'
 import result from './components/result.vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import './assets/index.css'
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
-
+Vue.use(ElementUI)
 // 创建路由
 let router = new VueRouter({
     routes:[
