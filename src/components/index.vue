@@ -1,47 +1,60 @@
 <template>
-  <div class="index">
-    <!-- 左侧 -->
+  <div class="index-container">
+    <!-- 导航区域 -->
     <div class="nav">
       <ul>
-        <li><router-link to="/discovery">发现音乐</router-link></li>
-        <li><router-link to="/playlist">推荐歌单</router-link></li>
-        <li><router-link to="/songs">最新音乐</router-link></li>
-        <li><router-link to="/mvs">最新MV</router-link></li>
+        <li>
+          <router-link to="/discovery">
+            <span class="iconfont icon-find-music"></span>
+            发现音乐
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/playlists">
+            <span class="iconfont icon-music-list"></span>
+            推荐歌单
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/songs">
+            <span class="iconfont icon-music"></span>
+            最新音乐
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/mvs">
+            <span class="iconfont icon-mv"></span>
+            最新MV
+          </router-link>
+        </li>
       </ul>
     </div>
-    <!-- 右侧 -->
+    <!-- 主体区域 -->
     <div class="main">
-      <!-- 显示组件 -->
       <router-view></router-view>
+    </div>
+    <!-- 播放标签 -->
+    <div class="player">
+      <audio :src="musicUrl" autoplay controls id="music"></audio>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name:'index',
+  data() {
+    return {
+      musicUrl:''
+    }
+  },
+  mounted() {
+    // 订阅消息
+
+  },
+};
 </script>
 
 <style lang="less" scoped>
-.index{
-  display: flex;
-  height: 830px;
-}
-.index.nav{
-  width: 200px;
-  background-color: #ededed;
-}
-.index.nav li{
-  text-align: center;
-  margin: 10px;
-}
-.main{
-  background-color: orange;
-  // 剩余尺寸
-  flex: 1;
-}
-//  点击高亮
-a.router-link-active{
-  color: white;
-  background-color: orange;
-}
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
    <!-- 头部组件 -->
    <top />
    <!--主体组件 -->
@@ -11,6 +11,7 @@
 import top from './components/top'
 import index from './components/index'
   export default {
+    name:'app',
     // 组件注册
     components:{
       top,

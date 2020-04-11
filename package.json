@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.9.0",
+    "axios": "^0.19.2",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
     "cache-loader": "^4.1.0",
