@@ -8,14 +8,16 @@
   },
   "dependencies": {
     "@babel/core": "^7.9.0",
+    "PubSub": "^3.6.0",
     "axios": "^0.19.2",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
     "cache-loader": "^4.1.0",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "element-ui": "^2.13.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
+    "pubsub-js": "^1.8.0",
     "qs": "^6.9.3",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"

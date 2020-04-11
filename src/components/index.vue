@@ -42,19 +42,21 @@
 
 <script>
 export default {
-  name:'index',
+  name: 'index',
   data() {
     return {
-      musicUrl:''
+      musicUrl: ''
     }
   },
   mounted() {
-    // 订阅消息
-
-  },
-};
+    //订阅消息
+    this.$pubSub.subscribe('pauseAudio', msg => {
+      var audio = document.getElementById('music')
+      audio.pause()
+    })
+  }
+}
 </script>
 
-<style lang="less" scoped>
-
+<style >
 </style>
