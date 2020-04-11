@@ -12,6 +12,7 @@
     "babel-loader": "^8.1.0",
     "cache-loader": "^4.1.0",
     "core-js": "^3.6.4",
+    "element-ui": "^2.13.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "vue": "^2.6.11",
